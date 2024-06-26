@@ -52,16 +52,16 @@ export class AppMenuComponent implements OnInit {
                 icon: 'pi pi-fw pi-briefcase',
                 items: [                  
                     {
-                        label: 'Reclamaciones',
+                        label: 'Pesos y Medidas',
                         icon: 'pi pi-fw pi-user',
                         items: [
                             {
-                                label: 'Login',
+                                label: 'Registrar Pesos Medidas',
                                 icon: 'pi pi-fw pi-sign-in',
                                 routerLink: ['/auth/login']
                             },
                             {
-                                label: 'Error',
+                                label: 'Lista de Pesos y Medidas',
                                 icon: 'pi pi-fw pi-times-circle',
                                 routerLink: ['/auth/error']
                             },
