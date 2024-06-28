@@ -1,7 +1,7 @@
 import { OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { LayoutService } from './service/app.layout.service';
-
+import { Table } from 'primeng/table';
 @Component({
     selector: 'app-menu',
     templateUrl: './app.menu.component.html'
@@ -19,19 +19,19 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }
                 ]
-            }, 
+            },
             {
                 label: 'GESTION PESOS Y MEDIDAS',
-                items: [ 
-                    { label: 'Pesos y Medidas', icon: 'pi pi-fw pi-id-card', routerLink: ['/pesosmedidas'] }                            
+                items: [
+                    { label: 'Pesos y Medidas', icon: 'pi pi-fw pi-id-card', routerLink: ['/pesosmedidas'] }
                 ]
             },
             {
                 label: 'MANTENIMIENTO',
-                items: [ 
-                    { label: 'Banco', icon: 'pi pi-fw pi-id-card', routerLink: ['/banco'] }                            
+                items: [
+                    { label: 'Banco', icon: 'pi pi-fw pi-id-card', routerLink: ['/banco'] }
                 ]
-            },                            
+            },
             {
                 label: 'UI Components',
                 items: [
@@ -118,7 +118,7 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ['/pages/empty']
                     },
                 ]
-            },            
+            },
         ];
     }
 }
